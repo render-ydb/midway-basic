@@ -9,7 +9,9 @@ import {
 } from '@midwayjs/core';
 import { TodoService } from '../service/todo.service';
 import { TodoDto } from '../dto/todo.dto';
+import { ApiTags } from '@midwayjs/swagger';
 
+@ApiTags('todo')
 @Controller('/api/todo')
 export class TodoController {
   @Inject()
