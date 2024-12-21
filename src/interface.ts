@@ -1,6 +1,9 @@
 /**
  * @description User-Service parameters
  */
-export interface IUserOptions {
-  uid: number;
+
+export interface ITodo {
+  id: number;
+  title: string;
+  description: string;
 }
