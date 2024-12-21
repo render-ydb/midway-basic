@@ -7,6 +7,10 @@ export default {
     port: 7001,
   },
   swagger: {
+    title: 'midway-basic',
+    description: 'This is a swagger-ui for midwayjs project',
+    version: '1.0.0',
+    enable: true,
     swaggerPath: '/dosc',
   },
 } as MidwayConfig;
