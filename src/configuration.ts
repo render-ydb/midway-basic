@@ -3,6 +3,7 @@ import * as koa from '@midwayjs/koa';
 import * as validate from '@midwayjs/validate';
 import * as info from '@midwayjs/info';
 import { join } from 'path';
+import * as swagger from '@midwayjs/swagger';
 // import { DefaultErrorFilter } from './filter/default.filter';
 // import { NotFoundFilter } from './filter/notfound.filter';
 import { ReportMiddleware } from './middleware/report.middleware';
@@ -11,6 +12,10 @@ import { ReportMiddleware } from './middleware/report.middleware';
   imports: [
     koa,
     validate,
+    {
+      component: swagger,
+      enabledEnvironment: ['local'],
+    },
     {
       component: info,
       enabledEnvironment: ['local'],
